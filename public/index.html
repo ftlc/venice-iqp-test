@@ -39,7 +39,7 @@
     function writeUserData() {
       var name = document.getElementById("plaqueName").value;
       var year = document.getElementById("plaqueYear").value;
-      firebase.database().ref('plaques/' + name).set({
+      firebase.database().ref('Plaques/' + name).set({
         username: name,
         year: year
         });
