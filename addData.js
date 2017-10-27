@@ -13,6 +13,6 @@ var config = {
   function writeUserData(name, num) {
   firebase.database().ref('plaques/' + name).set({
     username: name,
-    year: year
+    year: num
   });
 }
